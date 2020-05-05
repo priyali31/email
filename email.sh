@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/bash -x
 while true
 do
     read -p "Enter email: " email
     echo
-    if [[ "$email" =~ ^[a-zA-Z0-9+]+$ ]]
+    if [[ "$email" =~ ^[a-zA-Z0-9]+@[a-z]+$ ]]
     then
         echo "Email $email is valid."
         break
